@@ -1,2 +1,2 @@
 #!/bin/bash
-awk ' { $0=toupper(substr($0,1,1))substr($0,2); print } ' file 
+cut -c 1 | paste -s -d ''  
